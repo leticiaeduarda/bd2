@@ -20,3 +20,19 @@ dt_livro date,
 preco decimal(12,2)		-- tipo money funciona apenas no SQL Server
 );
  
+
+create table tb_teste 
+(cd_teste int not null primary key,
+teste char(10));
+
+alter table tb_livro
+add nota int;
+
+alter table tb_livro
+alter column nota char(50);
+
+alter table tb_livro
+drop clumn nota;
+
+drop table teste;
+
